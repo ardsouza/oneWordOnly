@@ -6,3 +6,8 @@
 	float:right;
 	width: 200px;
 }
+
+body {
+    background-image: url("images/team.jpg");
+    background-size: 25%;
+}
