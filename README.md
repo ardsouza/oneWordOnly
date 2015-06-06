@@ -12,3 +12,5 @@ A.
 Day.
 
 firebase: https://owo.firebaseio.com/
+
+"99 words but you only get one"
