@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 
+
+/*Custom CSS starts here*/
+
 html {
 	width:100%;
 	height:100%;
@@ -56,6 +59,8 @@ html {
 body {
 	width:100%;
 	height:100%;
+	background-image: url("images/team.jpg");
+	background-size: cover;
 }
 
 #headerContainer {
@@ -99,6 +104,9 @@ body {
 
 #userInputContainer {
 	width:600px;
+
+
+
 	height:300px;
 	margin: 0 auto;
 	padding: 10px 20px;
@@ -111,12 +119,19 @@ body {
 	margin: 0 auto;
 }
 
-#username {
-	float:right;
-	width: 200px;
+
+label {
+	float:both;
 }
 
-body {
-    background-image: url("images/team.jpg");
-    background-size: 25%;
+.form-control {
+	width:80%;
+	float:left;
+	height:100%;
+}
+
+.btn-primary {
+	width:20%;
+	float:right;
+	height:100%;
 }
