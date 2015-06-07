@@ -12,3 +12,12 @@ A.
 Day.
 
 firebase: https://owo.firebaseio.com/
+
+"99 words but you only get one"
+
+///----------------------GIT WORKFLOW--------------------------------//
+- Feature branches created from main repository
+- User to pull from main repository
+- ON YOUR FORK: checkout the feature branch you were assigned
+- push changes to your fork, create a pull request to merge branch back with the main repository
+- The team will decide which feature branches get merged to the master branch in the main repo

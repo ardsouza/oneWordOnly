@@ -117,6 +117,7 @@ body {
 	margin: 0 auto;
 }
 
+
 label {
 	float:both;
 }
@@ -131,11 +132,8 @@ label {
 	width:20%;
 	float:right;
 	height:100%;
+
+body {
+    background-image: url("images/team.jpg");
+    background-size: 25%;
 }
-
-
-
-
-
-
-
