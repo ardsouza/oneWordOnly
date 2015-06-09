@@ -56,13 +56,6 @@ html {
 	height:100%;
 }
 
-body {
-	width:100%;
-	height:100%;
-	background-image: url("images/team.jpg");
-	background-size: cover;
-}
-
 #headerContainer {
     border: black solid 1px;
     border-width:0 0 1px 0;

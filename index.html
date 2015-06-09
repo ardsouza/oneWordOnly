@@ -4,7 +4,6 @@
 <head>
     <title>Word</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
     <script src="scripts/app.js"></script>
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -12,46 +11,21 @@
 </head>
 
 <body>
-    <div id="headerContainer">
-        <div id="user">
-            <div id="userName">
-                <h2>USERNAME</h2>
-            </div>
-            <div id="userAvatar">
-            </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Word</a>
+      </div>
+      <form class="navbar-form navbar-right" role="login">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username">
+          <input type="text" class="form-control" placeholder="Password">
         </div>
-    </div>
-    <div id="bodyContainer">
-        <div id="userInputContainer">
-
-            <div class="form-group" id="userInputGroup">
-                <label for="usr">User:</label>
-                <input type="text" class="form-control" id="userInput">
-                <button id="updateUser" class="btn-primary">
-                    Submit Username
-                </button>
-            </div>
-
-            <div class="form-group" id="passwordInputGroup">
-                <label for="usr">Password:</label>
-                <input type="text" class="form-control" id="passwordInput">
-                <button id="updatePassword" class="btn-primary">
-                    Submit Password
-                </button>
-            </div>
-
-            <div class="form-group" id="messageInputGroup">
-                <label for="usr">Message:</label>
-                <input type="text" class="form-control" id="messageInput">
-                <button id="updateMessage" class="btn-primary">
-                    Submit Word
-                </button>
-            </div>
-
-        </div>
-        <div id="messagesContainer">WORDS GO HERE
-        </div>
-    </div>
+        <button type="submit" class="btn btn-default">Login</button>
+      </form>
+    </div><!-- /.container-fluid -->
+  </nav>
 </body>
 
 </html>

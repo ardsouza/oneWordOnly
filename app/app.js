@@ -12,7 +12,7 @@ var AppView = Backbone.View.extend({
   //Post View
   //Words View
 
-}); 
+});
 
 var UserView = Backbone.View.extend({
 
@@ -43,6 +43,7 @@ var Word = Backbone.Model.extend({
   url: 'someurl',
   //username
   //text
+  //votes
   //createdAt?
 
 });
@@ -62,6 +63,8 @@ var User = Backbone.Model.extend({
 
   //username
   //password
-  //current word
+  //today's word
+  //word feed
+  //friends
 
 })
