@@ -1,4 +1,4 @@
-var App = Backbone.Model.extend({
+var AppModel = Backbone.Model.extend({
 
   this.set('words', new Words()); // Word Collection for viewing in Words View
   this.set('appView', new AppView()); // App View
@@ -40,27 +40,45 @@ var WordsView = Backbone.View.extend({
 
 var Word = Backbone.Model.extend({
 
-  url: 'someurl',
-  //username
-  //text
-  //votes
-  //createdAt?
+  initialize: function() {
+    this.set('createdAt', new Date());
+  },
+
+  upvote: function() {
+    this.set('votes', this.get('votes') + 1);
+  },
+
+  downvote: function() {
+    this.set('votes', this.get('votes') - 1);
+  },
 
 });
 
 var Words = Backbone.Collection.extend({
 
   url : 'someurl',
+
   model: Word,
+
   getWords : function() {
     //sync with firebase
   },
-  //sort?
-
 });
 
 var User = Backbone.Model.extend({
 
+  validate: function() {
+    return {
+      username: {required: true, msg: 'Please enter your username'},
+      password: {required: true, msg: 'Please enter your password'}
+    }
+  },
+
+  saveToDatabase : function() {},
+
+  getWords : function() {},
+
+  deleteWords: function() {}
   //username
   //password
   //today's word
@@ -68,3 +86,18 @@ var User = Backbone.Model.extend({
   //friends
 
 })
+
+
+
+var LoginView = Backbone.View.extend({
+  className: 'login',
+
+  events: {
+    'submit': 'login'
+    '#loginButton click' : 'login'
+  },
+
+  login: function(loginEvent){
+
+  }
+});
