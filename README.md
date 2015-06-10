@@ -35,6 +35,7 @@ firebase: https://owo.firebaseio.com/
 - User View
 - - Handle authentication and validation before server request
 - Post word view
+- Router (Backbone)
 
 ###Frontend: styling
 - Sidebar that scrolls with page

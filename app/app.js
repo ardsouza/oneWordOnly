@@ -32,10 +32,19 @@ var PostView = Backbone.View.extend({ //is form?
 });
 
 var WordsView = Backbone.View.extend({
+  className : 'wordsView',
 
-  //Has all Words posted
-  //Updates regularly?
+  initialize : function() {
+    //bind custom events
+  },
 
+  events : {
+    //do events
+  },
+
+  render : function() {
+    //render X amount of words from the collection
+  }
 });
 
 var Word = Backbone.Model.extend({
