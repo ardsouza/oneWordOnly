@@ -33,7 +33,7 @@ firebase: https://owo.firebaseio.com/
 - Word View
 - Words View
 - User View
-- - Handle authentication before server request
+- - Handle authentication and validation before server request
 - Post word view
 
 ###Frontend: styling
