@@ -1,7 +1,7 @@
 var AppModel = Backbone.Model.extend({
 
-  this.set('words', new Words()); // Word Collection for viewing in Words View
-  this.set('appView', new AppView()); // App View
+  // this.set('words', new Words()); // Word Collection for viewing in Words View
+  // this.set('appView', new AppView()); // App View
 
 });
 
@@ -25,9 +25,6 @@ var UserView = Backbone.View.extend({
 });
 
 var PostView = Backbone.View.extend({ //is form?
-
-  //Has Text input field
-  //Has submit button thing
 
 });
 
@@ -96,17 +93,17 @@ var User = Backbone.Model.extend({
 
 })
 
-
-
 var LoginView = Backbone.View.extend({
-  className: 'login',
+  el: '.login',
 
   events: {
-    'submit': 'login'
-    '#loginButton click' : 'login'
+    'submit': 'login',
   },
 
-  login: function(loginEvent){
+  login: function(event){
+    console.log(this.$('.username').val());
+    console.log(this.$('.password').val());
+  },
 
-  }
+  render : function() {},
 });
